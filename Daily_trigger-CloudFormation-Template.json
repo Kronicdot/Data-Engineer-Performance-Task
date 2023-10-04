@@ -1,0 +1,20 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "CloudFormation template for EventBridge rule 'Daily_trigger'",
+  "Resources": {
+    "EventRule0": {
+      "Type": "AWS::Events::Rule",
+      "Properties": {
+        "Description": "Daily trigger",
+        "EventBusName": "default",
+        "Name": "Daily_trigger",
+        "ScheduleExpression": "rate(1 day)",
+        "State": "ENABLED",
+        "Targets": [{
+          "Id": "p80erkkhqehbx7dvuuh",
+          "Arn": "arn:aws:lambda:us-east-2:418596331477:function:lambda_function"
+        }]
+      }
+    }
+  }
+}
