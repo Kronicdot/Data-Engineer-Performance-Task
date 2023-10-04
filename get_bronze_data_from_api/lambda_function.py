@@ -8,7 +8,6 @@ import boto3
 
 # Initialize AWS clients
 s3 = boto3.client('s3')
-glue = boto3.client('glue')
 
 # Define S3 bucket and folder names
 BUCKET_NAME = 'databucketmike'
