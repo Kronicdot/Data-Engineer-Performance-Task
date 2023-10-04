@@ -31,6 +31,9 @@ HAVING
 
   
 
-2. Explain your ratonale for your approach to this task.   
-3. What else would you do if you had more time?
+2. Explain your ratonale for your approach to this task.
+   Utilizing AWS Lambda's serverless architecture offers scalability. Storing data in S3 is an efficient approach for data storage management,
+   especially when files are converted into formats like CSV, which enhances the querying process. For those familiar with SQL, Athena serves as a highly
+   accessible tool and seamlessly integrates with S3. Collectively, executing these operations on AWS provides both scalability and cost-effectiveness.
+4. What else would you do if you had more time?
     If I had more time, I would focus on enhancing error management processes and refining the data cataloging system.
