@@ -101,7 +101,7 @@ def store_api_data(data):
         return False, None
 
 
-def get_api_data(app_token):
+def get_api_data():
     """Fetch data from the API using urllib"""
 
     api_url = 'https://data.cityofnewyork.us/resource/8wbx-tsch.json'
@@ -121,7 +121,7 @@ def lambda_handler(event, context):
     transforms the stored data,
     and returns a success status if all operations are successful."""
 
-    data = get_api_data("iyGcRT5Yvj5OrUnyHDlQhjCzd")
+    data = get_api_data()
     if data:
         result, s3_path = store_api_data(data)
         if result:
